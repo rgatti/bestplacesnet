@@ -1,0 +1,16 @@
+BestPlaces Extractor
+
+For personal use I wanted a tool to extract the table data when comparing two
+pages on BestPlaces.
+
+
+Build
+
+$ docker build -t bestplacesnet .
+
+
+Usage
+
+City names must be lower case in the format: "city_st". Example: minneapolis_mn
+
+$ docker run --rm -it bestplacesnet [city1] [city2] > compare.txt
